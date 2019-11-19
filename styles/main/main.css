@@ -1,0 +1,54 @@
+@import "../../styles/nav/nav.css";
+
+body {
+  background-color: goldenrod;
+  box-sizing: border-box;
+}
+.fish {
+  padding: 5px;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  max-width: 100%;
+}
+.fishies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 68%;
+  justify-content: space-evenly;
+}
+.fishies__card {
+  flex-basis: 28%;
+  width: 28%;
+  border: 2px dotted gray;
+  padding: 0 8px;
+  margin: 0 4px;
+  margin-bottom: 8px;
+}
+.highlightFish {
+  background-color: darkgoldenrod;
+  color: lightgoldenrodyellow;
+}
+.fish__size {
+  height: 170px;
+}
+.tipsHighlight {
+  border: 1px solid darkgoldenrod;
+  color: lightgoldenrodyellow;
+}
+aside {
+  flex-basis: 30%;
+  border: 1px solid red;
+  padding: 0 5px;
+}
+@media (max-width: 600px) {
+  .fishies {
+    flex-basis: 100%;
+  }
+  aside {
+    flex-basis: 100%;
+  }
+}
