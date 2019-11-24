@@ -1,4 +1,52 @@
 @import "../../styles/nav/nav.css";
 body {
+  box-sizing: border-box;
   background-color: goldenrod;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.locations-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 18px;
+}
+.color3 {
+  flex-basis: 25%;
+  padding: 0 15px;
+}
+aside {
+  border: 1px solid red;
+  padding: 0 5px;
+}
+.info {
+  padding: 0 15px;
+  margin: 2px;
+  border: 2px dotted red;
+  text-align: center;
+}
+.image-size {
+  height: 170px;
+  width: 250px;
+}
+button {
+  cursor: pointer;
+}
+/* .dialog-info {
+} */
+.info-tips {
+  padding: 5px;
+}
+/* .tips {
+} */
+.button--close {
+  margin: 15px;
+}
+.btn {
+  margin: 15px;
+}
+.highlightLocations {
+  background-color: darkgoldenrod;
+  color: lightgoldenrodyellow;
 }

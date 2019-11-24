@@ -12,39 +12,39 @@ const initializeDetailButtonEvents = () => {
 
   // You will be writing code below this line
   document
-    .querySelector("#button--bitey")
+    .querySelector("#button--Lucky")
     .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--bitey");
+      const theDialog = document.querySelector("#details--Lucky");
       theDialog.showModal();
     });
   document
-    .querySelector("#button--grady")
+    .querySelector("#button--Maria")
     .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--grady");
+      const theDialog = document.querySelector("#details--Maria");
       theDialog.showModal();
     });
   document
-    .querySelector("#button--rocky")
+    .querySelector("#button--Lil__Jon")
     .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--rocky");
+      const theDialog = document.querySelector("#details--Lil__Jon");
       theDialog.showModal();
     });
   document
-    .querySelector("#button--bas")
+    .querySelector("#button--Tammie")
     .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--bas");
+      const theDialog = document.querySelector("#details--Tammie");
       theDialog.showModal();
     });
   document
-    .querySelector("#button--john")
+    .querySelector("#button--Mike")
     .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--john");
+      const theDialog = document.querySelector("#details--Mike");
       theDialog.showModal();
     });
   document
-    .querySelector("#button--piper")
+    .querySelector("#button--Elvis")
     .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--piper");
+      const theDialog = document.querySelector("#details--Elvis");
       theDialog.showModal();
     });
 };

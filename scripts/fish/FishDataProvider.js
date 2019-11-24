@@ -16,7 +16,7 @@ const fishCollection = [
     image: "assets/maria.jpg"
   },
   {
-    name: "Lil Jon",
+    name: "Lil__Jon",
     food: ["cheese", "worms"],
     species: "Goldfish",
     location: "America",

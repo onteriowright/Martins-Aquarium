@@ -22,11 +22,13 @@ img {
 }
 .fishies__card {
   flex-basis: 28%;
+  text-align: center;
   width: 28%;
-  border: 2px dotted gray;
+  border: 2px dotted red;
   padding: 0 8px;
   margin: 0 4px;
   margin-bottom: 8px;
+  padding-bottom: 10px;
 }
 .highlightFish {
   background-color: darkgoldenrod;
@@ -34,21 +36,34 @@ img {
 }
 .fish__size {
   height: 170px;
+  width: 250px;
 }
 .tipsHighlight {
   border: 1px solid darkgoldenrod;
   color: lightgoldenrodyellow;
 }
 aside {
-  flex-basis: 30%;
+  flex-basis: 26%;
   border: 1px solid red;
   padding: 0 5px;
+}
+button {
+  cursor: pointer;
+}
+.button--close {
+  margin: 15px;
+}
+.dialog--tips {
+  padding: 5px;
+}
+.dialog--fish {
+  
 }
 @media (max-width: 600px) {
   .fishies {
     flex-basis: 100%;
   }
   aside {
-    flex-basis: 100%;
+    flex-basis: 61%;
   }
 }

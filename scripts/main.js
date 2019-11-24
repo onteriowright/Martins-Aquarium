@@ -1,13 +1,19 @@
-import initializeDetailButtonEvents from "./dialog.js";
-import addMouseOverEventListeners from "./highlight.js";
-import hightlightTips from "./tips.js";
-import { useFish } from "./FishDataProvider.js";
+import { useFish } from "./fish/FishDataProvider.js";
+import { useTips } from "./tips/TipDataProvider.js";
+import FishListComponent from "./fish/FishList.js";
+import TipsListComponent from "./tips/TipList.js";
+import addMouseOverEventListeners from "./highlights/Highlight.js";
+import initializeDetailButtonEvents from "./dialog/Dialog.js";
+import highlightTips from "./tips/TipHighlight.js";
+// import FishComponent from "./fish/Fish.js";
+// import TipsComponent from "./tips/Tips.js";
 
-initializeDetailButtonEvents();
+useFish();
+useTips();
+FishListComponent();
+TipsListComponent();
 addMouseOverEventListeners();
-hightlightTips();
-const allOfFish = useFish();
-
-for (const fish of allOfFish) {
-  console.log(fish);
-}
+initializeDetailButtonEvents();
+highlightTips();
+// FishComponent();
+// TipsComponent();

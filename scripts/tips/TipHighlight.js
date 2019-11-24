@@ -1,5 +1,5 @@
-const hightlightTips = () => {
-  const tips = document.querySelectorAll(".tips");
+const highlightTips = () => {
+  const tips = document.querySelectorAll(".tip");
   for (const tip of tips) {
     tip.addEventListener("mouseover", event => {
       tip.className = "tipsHighlight";
@@ -10,4 +10,4 @@ const hightlightTips = () => {
   }
 };
 
-export default hightlightTips;
+export default highlightTips;
