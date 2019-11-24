@@ -1,7 +1,7 @@
 const addMouseOverEventListeners = () => {
   const fishCards = document.querySelectorAll(".fishies__card");
   const locationsCards = document.querySelectorAll(".info");
-
+  //FishCards Highlights
   for (const card of fishCards) {
     card.addEventListener("mouseover", theMouseOverEvent => {
       card.classList.add("highlightFish");
@@ -10,7 +10,7 @@ const addMouseOverEventListeners = () => {
       card.classList.remove("highlightFish");
     });
   }
-
+  //Locations Highlights
   for (const locations of locationsCards) {
     locations.addEventListener("mouseover", theLocationsEvent => {
       locations.classList.add("highlightLocations");
