@@ -1,4 +1,4 @@
-const locationsComponent = locations => {
+const LocationsComponent = locations => {
   return `
   <div class="info">
     <div>
@@ -17,4 +17,4 @@ const locationsComponent = locations => {
   </div>`;
 };
 
-export default locationsComponent;
+export default LocationsComponent;

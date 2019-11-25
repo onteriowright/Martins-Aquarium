@@ -6,17 +6,11 @@ const TipsListComponent = () => {
   const contentElement = document.querySelector(".tip-info");
   const tips = useTips();
 
-  let allTipsHTML = "";
-  tips.forEach(tip => {
-    const tipsHTML = TipsComponent(tip);
-    allTipsHTML += tipsHTML;
-  });
-
   // Add to the existing HTML in the content element
   contentElement.innerHTML += `
       <section class="content">
       <h1>My Expert Tips</h1>
-            ${allTipsHTML}
+            ${tips.map(tip => TipsComponent(tip)).join("")}
       </section>
   `;
 };

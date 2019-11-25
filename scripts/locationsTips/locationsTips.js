@@ -1,4 +1,4 @@
-const locationsTipsComponent = tips => {
+const LocationsTipsComponent = tips => {
   return `
   <div class="locationsTips">
     <div class="tips">
@@ -12,4 +12,4 @@ const locationsTipsComponent = tips => {
   `;
 };
 
-export default locationsTipsComponent;
+export default LocationsTipsComponent;

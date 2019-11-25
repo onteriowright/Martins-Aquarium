@@ -1,20 +1,14 @@
 import { useLocationsTips } from "./LocationsTipsDataProvider.js";
-import locationsTipsComponent from "./LocationsTips.js";
+import LocationsTipsComponent from "./LocationsTips.js";
 
 const locationsTipsListComponent = () => {
   const locationsTipsContentElement = document.querySelector(".location-tips");
-  const locationsTips = useLocationsTips();
-
-  let locationsTipsHTML = "";
-  locationsTips.forEach(tip => {
-    const tipsHTML = locationsTipsComponent(tip);
-    locationsTipsHTML += tipsHTML;
-  });
+  const LocationsTips = useLocationsTips();
 
   locationsTipsContentElement.innerHTML += `
      <section>
       <h1>My Expert Tips</h1>
-        ${locationsTipsHTML}
+        ${LocationsTips.map(tip => LocationsTipsComponent(tip)).join("")}
     </section>
   `;
 };

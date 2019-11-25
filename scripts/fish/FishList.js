@@ -6,16 +6,10 @@ const FishListComponent = () => {
   const contentElement = document.querySelector(".fishies");
   const fishes = useFish();
 
-  let allFishHTML = "";
-  fishes.forEach(fish => {
-    const fishHTML = FishComponent(fish);
-    allFishHTML += fishHTML;
-  });
-
   // Add to the existing HTML in the content element
   contentElement.innerHTML += `
       <section class="content">
-            ${allFishHTML}
+            ${fishes.map(fish => FishComponent(fish)).join("")}
       </section>
   `;
 };
