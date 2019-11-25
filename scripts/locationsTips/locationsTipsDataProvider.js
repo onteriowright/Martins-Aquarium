@@ -1,11 +1,11 @@
 const locationsTips = [
   {
     title: "Weather",
-    information: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    information: "Be sure to always pack an umbrella."
   },
   {
     title: "Tourist",
-    information: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    information: "Always beware of your surroundings. Shark bites hurt!"
   }
 ];
 
