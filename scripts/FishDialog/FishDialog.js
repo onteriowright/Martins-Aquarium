@@ -1,6 +1,8 @@
 const initializeDetailButtonEvents = () => {
   //Reference to all close buttons
-  const allCloseButtons = document.querySelectorAll(".button--close");
+  const allCloseButtons = document.querySelectorAll(
+    "button[class^='button--']"
+  );
 
   //This function loops through all close buttons and add event listener
   for (const btn of allCloseButtons) {
@@ -10,7 +12,7 @@ const initializeDetailButtonEvents = () => {
     });
   }
   //Reference allDetailButtons
-  const allDetailButtons = document.querySelectorAll(".button--open");
+  const allDetailButtons = document.querySelectorAll("button[id^= 'button--']");
   //This function loops through all detail buttons and add event listener
   allDetailButtons.forEach(btn => {
     btn.addEventListener("click", event => {
