@@ -5,7 +5,7 @@ const FishComponent = fish => {
               <img class="fish__size" src="${fish.image}" alt="">
           </div>
           <div class="fish__name"><h4>${fish.name}</h4></div>
-          <button id="button--${fish.name}">Details</button>
+          <button class="button--open" id="button--${fish.name}">Details</button>
 
           <dialog class="dialog--fish" id="details--${fish.name}">
               <div class="dialog--tips">Species: ${fish.species}</div>

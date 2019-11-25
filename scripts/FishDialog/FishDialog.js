@@ -9,44 +9,13 @@ const initializeDetailButtonEvents = () => {
     });
   }
   // CAN'T TOUCH THIS - END
-
-  // You will be writing code below this line
-  document
-    .querySelector("#button--Lucky")
-    .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--Lucky");
+  const allDetailButtons = document.querySelectorAll(".button--open");
+  allDetailButtons.forEach(btn => {
+    btn.addEventListener("click", event => {
+      const theDialog = document.querySelector(`#${event.target.id} + dialog`);
       theDialog.showModal();
     });
-  document
-    .querySelector("#button--Maria")
-    .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--Maria");
-      theDialog.showModal();
-    });
-  document
-    .querySelector("#button--Lil__Jon")
-    .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--Lil__Jon");
-      theDialog.showModal();
-    });
-  document
-    .querySelector("#button--Tammie")
-    .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--Tammie");
-      theDialog.showModal();
-    });
-  document
-    .querySelector("#button--Mike")
-    .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--Mike");
-      theDialog.showModal();
-    });
-  document
-    .querySelector("#button--Elvis")
-    .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--Elvis");
-      theDialog.showModal();
-    });
+  });
 };
 
 export default initializeDetailButtonEvents;
