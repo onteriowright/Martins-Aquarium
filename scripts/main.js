@@ -1,10 +1,10 @@
-import { useFish } from "./fish/FishDataProvider.js";
-import { useTips } from "./tips/TipDataProvider.js";
-import FishListComponent from "./fish/FishList.js";
-import TipsListComponent from "./tips/TipList.js";
-import addMouseOverEventListeners from "./highlights/Highlight.js";
-import initializeDetailButtonEvents from "./dialog/Dialog.js";
-import highlightTips from "./tips/TipHighlight.js";
+import { useFish } from "./Fish/FishDataProvider.js";
+import { useTips } from "./FishTips/TipDataProvider.js";
+import FishListComponent from "./Fish/FishList.js";
+import TipsListComponent from "./FishTips/TipList.js";
+import addMouseOverEventListeners from "./Highlights/Highlight.js";
+import initializeDetailButtonEvents from "./FishDialog/FishDialog.js";
+import highlightTips from "./FishTips/TipHighlight.js";
 
 useFish();
 useTips();

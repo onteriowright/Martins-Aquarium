@@ -1,5 +1,5 @@
-import { useLocationsTips } from "./locationsTipsDataProvider.js";
-import locationsTipsComponent from "./locationsTips.js";
+import { useLocationsTips } from "./LocationsTipsDataProvider.js";
+import locationsTipsComponent from "./LocationsTips.js";
 
 const locationsTipsListComponent = () => {
   const locationsTipsContentElement = document.querySelector(".location-tips");

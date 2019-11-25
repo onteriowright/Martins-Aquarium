@@ -10,7 +10,7 @@ const addMouseOverEventListeners = () => {
       card.classList.remove("highlightFish");
     });
   }
-  //Locations Highlights
+  //LocationsCards Highlights
   for (const locations of locationsCards) {
     locations.addEventListener("mouseover", theLocationsEvent => {
       locations.classList.add("highlightLocations");
