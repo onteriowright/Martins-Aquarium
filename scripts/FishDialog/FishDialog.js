@@ -1,15 +1,17 @@
 const initializeDetailButtonEvents = () => {
-  // CAN'T TOUCH THIS - START
+  //Reference to all close buttons
   const allCloseButtons = document.querySelectorAll(".button--close");
 
+  //This function loops through all close buttons and add event listener
   for (const btn of allCloseButtons) {
     btn.addEventListener("click", theEvent => {
       const dialogElement = theEvent.target.parentNode;
       dialogElement.close();
     });
   }
-  // CAN'T TOUCH THIS - END
+  //Reference allDetailButtons
   const allDetailButtons = document.querySelectorAll(".button--open");
+  //This function loops through all detail buttons and add event listener
   allDetailButtons.forEach(btn => {
     btn.addEventListener("click", event => {
       const theDialog = document.querySelector(`#${event.target.id} + dialog`);
