@@ -56,9 +56,6 @@ button {
 .dialog--tips {
   padding: 5px;
 }
-.dialog--fish {
-  
-}
 @media (max-width: 600px) {
   .fishies {
     flex-basis: 100%;
