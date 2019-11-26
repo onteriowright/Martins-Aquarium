@@ -1,13 +1,13 @@
 const locationsTipsHighlights = () => {
   const tipsHighlights = document.querySelectorAll(".locationsTips");
-  for (const tipsHighlight of tipsHighlights) {
-    tipsHighlight.addEventListener("mouseover", tipsEvent => {
-      tipsHighlight.className = "tipsHighlightsSections";
-    });
-    tipsHighlight.addEventListener("mouseout", tipsEvent => {
-      tipsHighlight.className = "";
-    });
-  }
+  tipsHighlights.forEach(tipsHighlight => {
+    tipsHighlight.addEventListener("mouseover", () =>
+      tipsHighlight.classList.add("tipsHighlightsSections")
+    );
+    tipsHighlight.addEventListener("mouseout", () =>
+      tipsHighlight.classList.remove("tipsHighlightsSections")
+    );
+  });
 };
 
 export default locationsTipsHighlights;

@@ -49,8 +49,6 @@ const fishCollection = [
   }
 ];
 
-export const useFish = () => {
-  return fishCollection;
-};
+export const useFish = () => fishCollection;
 
-//Immutability: Our core data, raw data should be private and hidden and should not be changed
+//Immutability: Our core data, raw data should be private and hidden and should not be changed.
