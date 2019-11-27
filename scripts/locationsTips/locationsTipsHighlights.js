@@ -1,4 +1,4 @@
-const locationsTipsHighlights = () => {
+const LocationsTipsHighlights = () => {
   const tipsHighlights = document.querySelectorAll(".locationsTips");
   tipsHighlights.forEach(tipsHighlight => {
     tipsHighlight.addEventListener("mouseover", () =>
@@ -10,4 +10,4 @@ const locationsTipsHighlights = () => {
   });
 };
 
-export default locationsTipsHighlights;
+export default LocationsTipsHighlights;

@@ -1,4 +1,4 @@
-const highlightTips = () => {
+const HighlightTips = () => {
   const tips = document.querySelectorAll(".tip");
 
   tips.forEach(tip => {
@@ -9,4 +9,4 @@ const highlightTips = () => {
   });
 };
 
-export default highlightTips;
+export default HighlightTips;

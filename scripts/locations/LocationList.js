@@ -1,7 +1,7 @@
 import { useLocations } from "./LocationDataProvider.js";
 import LocationsComponent from "./Locations.js";
 
-const locationsListComponent = () => {
+const LocationsListComponent = () => {
   const locationsContentElement = document.querySelector(".locations-content");
   const locations = useLocations();
 
@@ -11,4 +11,4 @@ const locationsListComponent = () => {
       </section>
   `;
 };
-export default locationsListComponent;
+export default LocationsListComponent;

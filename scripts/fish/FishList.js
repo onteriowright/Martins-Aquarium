@@ -1,10 +1,10 @@
-import { useFish } from "./FishDataProvider.js";
+import { UseFish } from "./FishDataProvider.js";
 import FishComponent from "./Fish.js";
 
 const FishListComponent = () => {
   // Get a reference to the `<article class="content">` element
   const contentElement = document.querySelector(".fishies");
-  const fishes = useFish();
+  const fishes = UseFish();
 
   // Add to the existing HTML in the content element
   contentElement.innerHTML += `

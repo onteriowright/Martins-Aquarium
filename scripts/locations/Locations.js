@@ -1,6 +1,6 @@
 const LocationsComponent = locations => {
   return `
-  <div class="info">
+  <div class="locations__card">
     <div>
         <img class="image-size" src="${locations.image}" alt="" />
     </div>

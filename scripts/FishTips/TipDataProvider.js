@@ -13,6 +13,6 @@ const tipCollection = [
   }
 ];
 
-export const useTips = () => {
+export const UseTips = () => {
   return tipCollection;
 };

@@ -1,6 +1,6 @@
-const addMouseOverEventListeners = () => {
+const AddMouseOverEventListeners = () => {
   const fishCards = document.querySelectorAll(".fishies__card");
-  const locationsCards = document.querySelectorAll(".info");
+  const locationsCards = document.querySelectorAll(".locations__card");
 
   //FishCards Highlights
 
@@ -24,4 +24,4 @@ const addMouseOverEventListeners = () => {
     );
   });
 };
-export default addMouseOverEventListeners;
+export default AddMouseOverEventListeners;

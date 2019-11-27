@@ -1,18 +1,32 @@
-@import "../../styles/nav/nav.css";
+@import "../../styles/Nav/Nav.css";
+aside {
+  flex-basis: 26%;
+  border: 1px solid red;
+  padding: 0 5px;
+}
 
 body {
   background-color: goldenrod;
   box-sizing: border-box;
 }
-.fish {
-  padding: 5px;
+button {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+.button--close {
+  margin: 15px;
 }
 .content {
   display: flex;
   flex-wrap: wrap;
 }
-img {
-  max-width: 100%;
+.dialog--tips {
+  padding: 5px;
+}
+.fish {
+  padding: 5px;
 }
 .fishies {
   display: flex;
@@ -30,31 +44,17 @@ img {
   margin-bottom: 8px;
   padding-bottom: 10px;
 }
-.highlightFish {
-  background-color: darkgoldenrod;
-  color: lightgoldenrodyellow;
-}
 .fish__size {
   height: 170px;
   width: 250px;
 }
+.highlightFish {
+  background-color: darkgoldenrod;
+  color: lightgoldenrodyellow;
+}
 .tipsHighlight {
   border: 1px solid darkgoldenrod;
   color: lightgoldenrodyellow;
-}
-aside {
-  flex-basis: 26%;
-  border: 1px solid red;
-  padding: 0 5px;
-}
-button {
-  cursor: pointer;
-}
-.button--close {
-  margin: 15px;
-}
-.dialog--tips {
-  padding: 5px;
 }
 @media (max-width: 600px) {
   .fishies {

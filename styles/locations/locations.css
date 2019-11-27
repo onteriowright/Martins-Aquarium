@@ -3,9 +3,39 @@ body {
   box-sizing: border-box;
   background-color: goldenrod;
 }
+aside {
+  border: 1px solid red;
+  padding: 0 5px;
+}
+button {
+  cursor: pointer;
+}
+.btn {
+  margin: 15px;
+}
+.button--close {
+  margin: 15px;
+}
 .content {
   display: flex;
   flex-wrap: wrap;
+}
+.highlightLocations {
+  background-color: darkgoldenrod;
+  color: lightgoldenrodyellow;
+}
+.image-size {
+  height: 170px;
+  width: 250px;
+}
+.info-tips {
+  padding: 5px;
+}
+.locations__card {
+  padding: 0 15px;
+  margin: 2px;
+  border: 2px dotted red;
+  text-align: center;
 }
 .locations-content {
   display: flex;
@@ -15,40 +45,6 @@ body {
 .location-tips {
   flex-basis: 25%;
   padding: 0 15px;
-}
-aside {
-  border: 1px solid red;
-  padding: 0 5px;
-}
-.info {
-  padding: 0 15px;
-  margin: 2px;
-  border: 2px dotted red;
-  text-align: center;
-}
-.image-size {
-  height: 170px;
-  width: 250px;
-}
-button {
-  cursor: pointer;
-}
-/* .dialog-info {
-} */
-.info-tips {
-  padding: 5px;
-}
-/* .tips {
-} */
-.button--close {
-  margin: 15px;
-}
-.btn {
-  margin: 15px;
-}
-.highlightLocations {
-  background-color: darkgoldenrod;
-  color: lightgoldenrodyellow;
 }
 .tipsHighlightsSections {
   border: 1px solid darkgoldenrod;

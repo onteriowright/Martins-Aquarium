@@ -1,4 +1,4 @@
-const initializeDetailButtonEvents = () => {
+const InitializeDetailButtonEvents = () => {
   const allCloseButtons = document.querySelectorAll(".button--close");
 
   allCloseButtons.forEach(btn => {
@@ -10,12 +10,12 @@ const initializeDetailButtonEvents = () => {
 
   //Reference AllLocationsDetailButtons
 
-  const AllLocationsDetailButtons = document.querySelectorAll(
+  const allLocationsDetailButtons = document.querySelectorAll(
     "button[id^= 'button--']"
   );
 
   //This function loops through all the location detail buttons
-  AllLocationsDetailButtons.forEach(btn => {
+  allLocationsDetailButtons.forEach(btn => {
     btn.addEventListener("click", theEvent => {
       const dialogElement = document.querySelector(
         `#${theEvent.target.id} + dialog`
@@ -25,4 +25,4 @@ const initializeDetailButtonEvents = () => {
   });
 };
 
-export default initializeDetailButtonEvents;
+export default InitializeDetailButtonEvents;
