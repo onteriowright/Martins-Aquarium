@@ -14,7 +14,7 @@ const InitializeDetailButtonEvents = () => {
   });
 
   //Reference allDetailButtons
-  const allDetailButtons = document.querySelectorAll("button[id^= 'button--']");
+  const allDetailButtons = document.querySelectorAll("button[id^='button--']");
 
   //This function loops through all detail buttons and add event listener
   allDetailButtons.forEach(btn => {
